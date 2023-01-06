@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: f5;
+    src: url(/font/HindMadurai-Bold.ttf);
+}
+
+@font-face {
+    font-family: f4;
+    src: url(/font/HindMadurai-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: f3;
+    src: url(/font/HindMadurai-Medium.ttf);
+}
+
+@font-face {
+    font-family: f2;
+    src: url(/font/HindMadurai-Regular.ttf);
+}
+
+@font-face {
+    font-family: f1;
+    src: url(/font/HindMadurai-Light.ttf);
+}
+
+.f1{
+    font-family: f1;
+}
+
+.f2{
+    font-family: f2;
+}
+
+.f3{
+    font-family: f3;
+}
+
+.f4{
+    font-family: f4;
+}
+
+.f5{
+    font-family: f5;
+}
+::-webkit-scrollbar{
+    background-color: #111827;
+    width: 7px;
+    height: 3px;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: #A855f7;
+    border: solid 2px #111827;
+    border-radius: 100px;
+}
+
+
+.search-border{
+    border: solid 3px #A855f7;
+    outline-style: none;
+}
+
+.search-border:focus{
+    box-shadow: 0px 0px 10px #A855f7;
+}
+
+.search-btn-border{
+    box-shadow: 0px 0px 10px #A855f7;
+}
+
+.home-bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/images/1.svg);
+}
+
+.need-border{
+    box-shadow: 8px 8px 0px rgb(28, 35, 46);
+}
+
+.contact-main{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/images/home/3.jpg);
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+  }
+  .my-masonry-grid_column {
+    background-clip: padding-box;
+  }
+
+  .title-br{
+    border-left: #A855f7 solid 6px;
+    padding-left: 5px;
+  }
+
+  .navSelect{
+    border-radius: 0px;
+    border-bottom: solid 3px #A855f7;
+}
+
+.tag-border{
+    border: #A855f7 0.15rem solid;
+}
+
+
+
+.code-border {
+    border: #A855f7 solid 4px;
+}
