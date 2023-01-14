@@ -1,6 +1,7 @@
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import atomOneDark from "react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark";
-
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 const ContentGenerator =({data})=> {
 
@@ -11,7 +12,11 @@ const ContentGenerator =({data})=> {
 
                     return(
                         val.type ==="text" ?
-                            <p className="text-white f2 text-xl mt-5 mb-3">{val.context}</p>
+                            <p className="text-white f2 text-xl mt-5 mb-3">
+                                <ReactMarkdown rehypePlugins={[rehypeRaw]} >
+                                    {val.context}
+                                </ReactMarkdown>
+                            </p>
                         :val.type === "title"?
                             <h1 className="title-br text-white f5 text-4xl mt-16 mb-3">{val.context}</h1>
                         :val.type ==="image" ?
@@ -25,17 +30,11 @@ const ContentGenerator =({data})=> {
                         style={atomOneDark} 
                         lineProps={(lineNumber) => ({ style: { padding: '8px 0' } })}
                         language={val.lang} 
-                    >
-                    {`${val.context}`}
-                    </SyntaxHighlighter>
+                        >
+                        {`${val.context}`}
+                        </SyntaxHighlighter>
                         :val.type === "space"? 
                             <div className={`w-full h-${val.context}`}></div>
-                        :val.type === "ordered-list"?
-                            val.context.map((v, i)=>{
-                                return(
-                                    <p className="text-white f2 text-lg mt-3 mb-3 p-2 opacity-80"><span className="pl-4 text-2xl f5 text-purple-500">{i+1}. </span>{v}</p>
-                                )
-                            })
                         :null
                     )
                 })
