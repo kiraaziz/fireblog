@@ -40,8 +40,8 @@ const SearchContent =({Data})=>{
             {
                 Data && Data.length !== 0 ? Data.map((value) => {
                     return(
-                        <a href={`/post/${value.url}`} className="mb-2 mr-2 ml-2  flex sm:flex-row flex-col cursor-pointer shadow-lg rounded-lg h-full sm:w-4/5 w-full bg-gray-900 ">
-                            <img alt={`${value.image.desc}`} src={`${value.image.link}`} class=" object-cover sm:w-1/3 h-96 m-2 rounded-lg"/>
+                        <a href={`/post/${value.url}`} className="mb-2 mr-2 ml-2 p-2 flex sm:flex-row flex-col cursor-pointer shadow-lg rounded-lg h-full sm:w-4/5 w-full bg-gray-900 ">
+                            <img alt={`${value.image.desc}`} src={`${value.image.link}`} class=" object-cover sm:w-1/3 h-full rounded-lg"/>
                             <div className="sm:w-2/3 w-full h-12/12 p-5 flex flex-col items-left justify-center">
                                 <p class="mb-2 text-2xl font-medium f4 text-purple-500">
                                     {value.title}
