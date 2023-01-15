@@ -46,6 +46,7 @@ const Home =({show, tags,  links, features, topView, topViewShow, lastUpdate, la
         <MainScreen>
             <Head>
                 <title>FireBlog</title>
+                <meta name="google-site-verification" content="XrMtRnC_cvsvQFEGE5FMyzEZOuCtjfMyDScEvfJz6rU" />
                 <meta name="theme-color" content="#111827"/>
                 <link rel="icon" href="/icons/Fire.svg" />
             </Head>
