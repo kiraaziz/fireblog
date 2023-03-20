@@ -1,0 +1,36 @@
+[{
+    "title": "Analysts",
+    "groups": [
+        {"name" :"Architect","type": "INTJ", "description": "Imaginative and strategic thinkers, with a plan for everything"},
+        {"name" :"Logician","type": "INTP", "description": "Innovative inventors with an unquenchable thirst for knowledge"},
+        {"name" :"Commander","type": "ENTJ", "description": "Bold, imaginative and strong-willed leaders, always finding a way or making one."},
+        {"name" :"Debater","type": "ENTP", "description": "Smart and curious thinkers who cannot resist an intellectual challenge."}   
+    ] 
+},
+{
+    "title": "Diplomats",
+    "groups": [
+        {"name" :"Advocate","type": "INFJ", "description": "Quiet and mystical, yet very inspiring and tireless idealists."},
+        {"name" :"Mediator","type": "INFP", "description": "Poetic, kind and altruistic people, always eager to help a good cause."},
+        {"name" :"Protagonist","type": "ENFJ", "description": "Charismatic and inspiring leaders, able to mesmerize their listeners."},
+        {"name" :"Campaigner","type": "ENFP", "description": "Enthusiastic, creative and sociable free spirits, who can always find a reason to smile."}    
+    ] 
+},
+{
+    "title": "Sentinels",
+    "groups": [
+        {"name" :"Logistician","type": "ISTJ", "description": "Practical and fact-minded individuals, whose reliability cannot be doubted."},
+        {"name" :"Defender","type": "ISFJ", "description": "Very dedicated and warm protectors, always ready to defend their loved ones."},
+        {"name" :"Executive","type": "ESTJ", "description": "Excellent administrators, unsurpassed at managing things or people."},
+        {"name" :"Consul","type": "ESFJ", "description": "Extraordinarily caring, social and popular people, always eager to help."}    
+    ] 
+},
+{
+    "title": "Explorers",
+    "groups": [
+        {"name" :"Virtuoso","type": "ISTP", "description": "Bold and practical experimenters, masters of all kinds of tools."},
+        {"name" :"Adventurer","type": "ISFP", "description": "Flexible and charming artists, always ready to explore and experience something new."},
+        {"name" :"Entrepreneur","type": "ESTP", "description": "Smart, energetic and very perceptive people, who truly enjoy living on the edge."},
+        {"name" :"Entertainer","type": "ESFP", "description": "Spontaneous, energetic and enthusiastic people life is never boring around them."}   
+    ] 
+}]
