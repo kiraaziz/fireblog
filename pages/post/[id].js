@@ -43,7 +43,7 @@ export async function getServerSideProps(context){
 const Post =({post, relatedFirst})=> {
 
     const [Data] = useState(post.totalItems === 1? post.items[0] :null)
-    const [selected, setSelected] = useState(Data.tags.match(/\b(\w+)\b/g)[0])
+    const [selected, setSelected] = useState(Data.tags)
     const [related, setRealted] = useState(relatedFirst)
 
     const getData =async(e)=>{
