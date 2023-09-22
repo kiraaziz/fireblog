@@ -21,7 +21,7 @@ const PostHeader =({data})=>{
                                 <div class="mb-3">
                                     <ul class="flex flex-wrap text-xs font-medium -m-1">
                                         {
-                                            data.tags && data.tags.match(/\b(\w+)\b/g).map((val) => {
+                                            [data.tags].map((val) => {
                                                 return(
                                                     <li class="m-1">
                                                         <a href={`/tags/${val}`} class="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-purple-500 hover:bg-purple-700 transition text-sm duration-150 ease-in-out">{val}</a>
