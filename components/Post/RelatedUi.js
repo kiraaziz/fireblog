@@ -13,7 +13,7 @@ const Random =({data})=>{
                         </p>
                         <div class="flex flex-wrap items-center mt-4 justify-starts">
                             {
-                                data.tags && data.tags.match(/\b(\w+)\b/g).map((val) => {
+                                [data.tags].map((val) => {
                                     return(
                                         <a href={`/tags/${val}`} class="text-sm m-0.5 py-1 px-4 f3 tag-border text-whiterounded-2xl rounded-full text-purple-500 ">
                                             {val}
