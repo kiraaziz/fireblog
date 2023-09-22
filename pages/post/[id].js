@@ -32,8 +32,7 @@ export async function getServerSideProps(context){
             })
         }
 
-        const relatedReq = await fetch(`https://stale-camera.pockethost.io/api/collections/fireBlogTopics/records?filter=(tags~'${post.items[0].tags}')&perPage=5`)
-        const result = await relatedReq.json()
+        const result = []
 
     return {
         props: {post: post, relatedFirst:result.items },
